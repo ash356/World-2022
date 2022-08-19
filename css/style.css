@@ -541,9 +541,9 @@ li{
 }
 /* End Landing */
 /* Start Grid */
-@media (max-width:767px) {
+@media (max-width:767px){
     .grid .container .con {
-        padding: 10% 0;
+        padding: 20% 0 !important;
         margin: 1% 0 10% 0;
         flex-direction: column;
         display: grid;
@@ -554,9 +554,20 @@ li{
         width: 100% !important;
         margin: 0% !important;
     }
+    .grid .con .con-img-02 ,.con-img-01,.con-img-03 {
+        height: 110% !important;
+        max-width: 100% !important;
+    }
+    .grid .con .gri .btn {
+        margin: 15% 30% 15% 37% !important;
+        font-size: 20px !important;
+    }
+    .grid .con .gri h5 {
+        margin: 5% 10% 20% 8% !important;
+    }
     
 }
-@media (max-width:992px) {
+@media (max-width:992px) and (min-width:767px) {
     .grid .container .con {
         padding: 10% 0;
         margin: 1% 0 10% 0;
@@ -573,7 +584,16 @@ li{
         height: 350px !important;
         max-width: 100% !important;
     }
-    
+    .grid .con .gri .btn {
+        font-size: 25px !important;
+    }
+    .grid .con .gri h5 {
+        font-size: 20px;
+    }
+    .grid .con .gri p {
+        font-size: 18px !important;
+        margin-top: 10% !important;
+    }
     
 }
 .grid{
